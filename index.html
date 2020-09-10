@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Realistic Cloud</title>
+</head>
+<body>
+    <div class="banner">
+        <h2 id="text">Stone</h2>
+        <div class="clouds">
+            <img src="cloud1.png" style="--i:1;">
+            <img src="cloud2.png" style="--i:2;">
+            <img src="cloud3.png" style="--i:3;">
+            <img src="cloud4.png" style="--i:4;">
+            <img src="cloud5.png" style="--i:5;">
+            <img src="cloud1.png" style="--i:10;">
+            <img src="cloud2.png" style="--i:9;">
+            <img src="cloud3.png" style="--i:8;">
+            <img src="cloud4.png" style="--i:7;">
+            <img src="cloud5.png" style="--i:6;">
+        </div>
+    </div>
+    <section>
+        <h2 id="article-title">Realistic Cloud Banner Parallax Effects</h2>
+        <p>
+            A rock is any naturally occurring solid mass or aggregate of minerals or mineraloid matter. It is categorized by the minerals included, its chemical composition and the way in which it is formed. Rocks are usually grouped into three main groups: igneous rocks, metamorphic rocks and sedimentary rocks. Rocks form the Earth's outer solid layer, the crust.<br><br>Igneous rocks are formed when magma cools in the Earth's crust, or lava cools on the ground surface or the seabed. The metamorphic rocks are formed when existing rocks are subjected to such large pressures and temperatures that they are transformed—something that occurs, for example, when continental plates collide. The sedimentary rocks are formed by diagenesis or lithification of sediments, which in turn are formed by the weathering, transport, and deposition of existing rocks.<br><br>The scientific study of rocks is called petrology, which is an essential component of geology.
+        </p>
+    </section>
+    <script>
+        let text = document.getElementById('text');
+        let article = document.getElementById('article-title');
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            text.style.marginBottom = value * 0.8 + 'px';
+            article.style.marginBottom = value * 0.05 + 'px';
+
+        })
+    </script>
+</body>
+</html>
